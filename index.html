@@ -5,30 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Alura Challenge 1</title>
+    <title>Encriptador</title>
 </head>
 <body>
     <header>
-      <img class="logo" src="./img/aluralogo.jpg" alt="Logo de lura">
+        <img src="./img/aluralogo.jpg" alt="Logo de Alura">
     </header>
     <main>
-      <section>
-        <textarea  class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-        <div>
-          <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+<section class="section1">
+<textarea class="textarea" placeholder="Ingrese el texto aquí" ></textarea>
+<div>
+    <h6 class="informacion">&#x26A0 Solo letras minusculas y sin acentos</h6>
+  </div>
+<div class="contenedor-botones">
+    <input type="button" value="Encriptar" class="boton-encriptar" onclick="btnEncriptar()">
+    <input type="button" value="Desencriptar" class="boton-desencriptar" onclick="btnDesencriptar()">
+</div>
+</section>
+<section class="section2">
+    <div class="contenedor-imagen">
+        <img src="./img/Muñeco.png" alt="Muñeco con lupa">
+    </div>
+    <div class="contenedor-subtitulo">
+        <h3>No se encontró ningun mensaje</h3>
+    </div>
+    <div class="contenedor-parrafo">
+        <div class="p">
+        <p>Escribe el texto que desea encriptar o desencriptar</p>
         </div>
-        <div class="botones">
-          <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-          <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        <div class="boton-copiar">
+            <input type="button" value="Copiar" class="boton-copiar">
         </div>
-      </section>
-      <section>
-        <textarea class="mensaje" cols="25" rows="10"></textarea>
-        <div>
-          <button class="btn-copiar">Copiar</button>
-        </div>
-      </section>
+    </div>
+    
+</section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+       &copy; Creado por Astarito Celeste - ONE
+    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
